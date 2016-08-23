@@ -1862,137 +1862,6 @@
         ]
     },
     {
-        "name": "laravel/framework",
-        "version": "v5.1.41",
-        "version_normalized": "5.1.41.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/laravel/framework.git",
-            "reference": "4f338f494ee2fffe6605f70a7cb8a36c93da95b6"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/4f338f494ee2fffe6605f70a7cb8a36c93da95b6",
-            "reference": "4f338f494ee2fffe6605f70a7cb8a36c93da95b6",
-            "shasum": ""
-        },
-        "require": {
-            "classpreloader/classpreloader": "~2.0|~3.0",
-            "danielstjules/stringy": "~1.8",
-            "doctrine/inflector": "~1.0",
-            "ext-mbstring": "*",
-            "ext-openssl": "*",
-            "jeremeamia/superclosure": "~2.0",
-            "league/flysystem": "~1.0",
-            "monolog/monolog": "~1.11",
-            "mtdowling/cron-expression": "~1.0",
-            "nesbot/carbon": "~1.19",
-            "paragonie/random_compat": "~1.4",
-            "php": ">=5.5.9",
-            "psy/psysh": "0.7.*",
-            "swiftmailer/swiftmailer": "~5.1",
-            "symfony/console": "2.7.*",
-            "symfony/css-selector": "2.7.*",
-            "symfony/debug": "2.7.*",
-            "symfony/dom-crawler": "2.7.*",
-            "symfony/finder": "2.7.*",
-            "symfony/http-foundation": "2.7.*",
-            "symfony/http-kernel": "2.7.*",
-            "symfony/process": "2.7.*",
-            "symfony/routing": "2.7.*",
-            "symfony/translation": "2.7.*",
-            "symfony/var-dumper": "2.7.*",
-            "vlucas/phpdotenv": "~1.0"
-        },
-        "replace": {
-            "illuminate/auth": "self.version",
-            "illuminate/broadcasting": "self.version",
-            "illuminate/bus": "self.version",
-            "illuminate/cache": "self.version",
-            "illuminate/config": "self.version",
-            "illuminate/console": "self.version",
-            "illuminate/container": "self.version",
-            "illuminate/contracts": "self.version",
-            "illuminate/cookie": "self.version",
-            "illuminate/database": "self.version",
-            "illuminate/encryption": "self.version",
-            "illuminate/events": "self.version",
-            "illuminate/exception": "self.version",
-            "illuminate/filesystem": "self.version",
-            "illuminate/hashing": "self.version",
-            "illuminate/http": "self.version",
-            "illuminate/log": "self.version",
-            "illuminate/mail": "self.version",
-            "illuminate/pagination": "self.version",
-            "illuminate/pipeline": "self.version",
-            "illuminate/queue": "self.version",
-            "illuminate/redis": "self.version",
-            "illuminate/routing": "self.version",
-            "illuminate/session": "self.version",
-            "illuminate/support": "self.version",
-            "illuminate/translation": "self.version",
-            "illuminate/validation": "self.version",
-            "illuminate/view": "self.version"
-        },
-        "require-dev": {
-            "aws/aws-sdk-php": "~3.0",
-            "iron-io/iron_mq": "~2.0",
-            "mockery/mockery": "~0.9.4",
-            "pda/pheanstalk": "~3.0",
-            "phpunit/phpunit": "~4.0",
-            "predis/predis": "~1.0"
-        },
-        "suggest": {
-            "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (~3.0).",
-            "doctrine/dbal": "Required to rename columns and drop SQLite columns (~2.4).",
-            "fzaninotto/faker": "Required to use the eloquent factory builder (~1.4).",
-            "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (~5.3|~6.0).",
-            "iron-io/iron_mq": "Required to use the iron queue driver (~2.0).",
-            "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
-            "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0).",
-            "pda/pheanstalk": "Required to use the beanstalk queue driver (~3.0).",
-            "predis/predis": "Required to use the redis cache and queue drivers (~1.0).",
-            "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0).",
-            "symfony/psr-http-message-bridge": "Required to psr7 bridging features (0.2.*)."
-        },
-        "time": "2016-08-10 12:23:27",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "5.1-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/Illuminate/Queue/IlluminateQueueClosure.php"
-            ],
-            "files": [
-                "src/Illuminate/Foundation/helpers.php",
-                "src/Illuminate/Support/helpers.php"
-            ],
-            "psr-4": {
-                "Illuminate\\": "src/Illuminate/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "The Laravel Framework.",
-        "homepage": "http://laravel.com",
-        "keywords": [
-            "framework",
-            "laravel"
-        ]
-    },
-    {
         "name": "fzaninotto/faker",
         "version": "v1.6.0",
         "version_normalized": "1.6.0.0",
@@ -2419,58 +2288,6 @@
         "keywords": [
             "export",
             "exporter"
-        ]
-    },
-    {
-        "name": "sebastian/environment",
-        "version": "1.3.8",
-        "version_normalized": "1.3.8.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/sebastianbergmann/environment.git",
-            "reference": "be2c607e43ce4c89ecd60e75c6a85c126e754aea"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/be2c607e43ce4c89ecd60e75c6a85c126e754aea",
-            "reference": "be2c607e43ce4c89ecd60e75c6a85c126e754aea",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.3.3 || ^7.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^4.8 || ^5.0"
-        },
-        "time": "2016-08-18 05:49:44",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.3.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de"
-            }
-        ],
-        "description": "Provides functionality to handle HHVM/PHP environments",
-        "homepage": "http://www.github.com/sebastianbergmann/environment",
-        "keywords": [
-            "Xdebug",
-            "environment",
-            "hhvm"
         ]
     },
     {
@@ -3419,36 +3236,40 @@
         ]
     },
     {
-        "name": "laracasts/flash",
-        "version": "1.3.4",
-        "version_normalized": "1.3.4.0",
+        "name": "laravelcollective/html",
+        "version": "v5.1.9",
+        "version_normalized": "5.1.9.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/laracasts/flash.git",
-            "reference": "e0a048b911092e15920ce66f4b6a54b6befa30a3"
+            "url": "https://github.com/LaravelCollective/html.git",
+            "reference": "f62269629b2a1093039733517bd7e75b3f98dffb"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laracasts/flash/zipball/e0a048b911092e15920ce66f4b6a54b6befa30a3",
-            "reference": "e0a048b911092e15920ce66f4b6a54b6befa30a3",
+            "url": "https://api.github.com/repos/LaravelCollective/html/zipball/f62269629b2a1093039733517bd7e75b3f98dffb",
+            "reference": "f62269629b2a1093039733517bd7e75b3f98dffb",
             "shasum": ""
         },
         "require": {
-            "illuminate/support": "~5.0",
-            "php": ">=5.4.0"
+            "illuminate/http": "5.1.*",
+            "illuminate/routing": "5.1.*",
+            "illuminate/session": "5.1.*",
+            "illuminate/support": "5.1.*",
+            "php": ">=5.5.9"
         },
         "require-dev": {
-            "mockery/mockery": "dev-master"
+            "mockery/mockery": "~0.9",
+            "phpunit/phpunit": "~4.0"
         },
-        "time": "2015-12-22 15:52:08",
+        "time": "2015-11-28 08:27:09",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
-                "Laracasts\\Flash": "src/"
+            "psr-4": {
+                "Collective\\Html\\": "src/"
             },
             "files": [
-                "src/Laracasts/Flash/functions.php"
+                "src/helpers.php"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -3457,11 +3278,243 @@
         ],
         "authors": [
             {
-                "name": "Jeffrey Way",
-                "email": "jeffrey@laracasts.com"
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            },
+            {
+                "name": "Adam Engebretson",
+                "email": "adam@laravelcollective.com"
+            }
+        ]
+    },
+    {
+        "name": "styde/blade-pagination",
+        "version": "5.1.2",
+        "version_normalized": "5.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/StydeNet/blade-pagination.git",
+            "reference": "727b3c0f5028a610b90231162e4a1beed80b8807"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/StydeNet/blade-pagination/zipball/727b3c0f5028a610b90231162e4a1beed80b8807",
+            "reference": "727b3c0f5028a610b90231162e4a1beed80b8807",
+            "shasum": ""
+        },
+        "require": {
+            "laravel/framework": "5.*",
+            "php": ">=5.4.0"
+        },
+        "time": "2015-08-02 02:23:34",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Styde\\BladePagination\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Duilio Palacios",
+                "email": "admin@styde.net",
+                "homepage": "http://styde.net",
+                "role": "Developer"
             }
         ],
-        "description": "Easy flash notifications"
+        "description": "Laravel's pagination with Blade templating support",
+        "homepage": "http://github.com/StydeNet/blade-pagination",
+        "keywords": [
+            "blade",
+            "pagination"
+        ]
+    },
+    {
+        "name": "sebastian/environment",
+        "version": "1.3.8",
+        "version_normalized": "1.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/environment.git",
+            "reference": "be2c607e43ce4c89ecd60e75c6a85c126e754aea"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/be2c607e43ce4c89ecd60e75c6a85c126e754aea",
+            "reference": "be2c607e43ce4c89ecd60e75c6a85c126e754aea",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.3 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8 || ^5.0"
+        },
+        "time": "2016-08-18 05:49:44",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            }
+        ],
+        "description": "Provides functionality to handle HHVM/PHP environments",
+        "homepage": "http://www.github.com/sebastianbergmann/environment",
+        "keywords": [
+            "Xdebug",
+            "environment",
+            "hhvm"
+        ]
+    },
+    {
+        "name": "laravel/framework",
+        "version": "v5.1.42",
+        "version_normalized": "5.1.42.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laravel/framework.git",
+            "reference": "876189b5ce03d40f0d9380c06fb61a3d0743b19c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/876189b5ce03d40f0d9380c06fb61a3d0743b19c",
+            "reference": "876189b5ce03d40f0d9380c06fb61a3d0743b19c",
+            "shasum": ""
+        },
+        "require": {
+            "classpreloader/classpreloader": "~2.0|~3.0",
+            "danielstjules/stringy": "~1.8",
+            "doctrine/inflector": "~1.0",
+            "ext-mbstring": "*",
+            "ext-openssl": "*",
+            "jeremeamia/superclosure": "~2.0",
+            "league/flysystem": "~1.0",
+            "monolog/monolog": "~1.11",
+            "mtdowling/cron-expression": "~1.0",
+            "nesbot/carbon": "~1.19",
+            "paragonie/random_compat": "~1.4",
+            "php": ">=5.5.9",
+            "psy/psysh": "0.7.*",
+            "swiftmailer/swiftmailer": "~5.1",
+            "symfony/console": "2.7.*",
+            "symfony/css-selector": "2.7.*",
+            "symfony/debug": "2.7.*",
+            "symfony/dom-crawler": "2.7.*",
+            "symfony/finder": "2.7.*",
+            "symfony/http-foundation": "2.7.*",
+            "symfony/http-kernel": "2.7.*",
+            "symfony/process": "2.7.*",
+            "symfony/routing": "2.7.*",
+            "symfony/translation": "2.7.*",
+            "symfony/var-dumper": "2.7.*",
+            "vlucas/phpdotenv": "~1.0"
+        },
+        "replace": {
+            "illuminate/auth": "self.version",
+            "illuminate/broadcasting": "self.version",
+            "illuminate/bus": "self.version",
+            "illuminate/cache": "self.version",
+            "illuminate/config": "self.version",
+            "illuminate/console": "self.version",
+            "illuminate/container": "self.version",
+            "illuminate/contracts": "self.version",
+            "illuminate/cookie": "self.version",
+            "illuminate/database": "self.version",
+            "illuminate/encryption": "self.version",
+            "illuminate/events": "self.version",
+            "illuminate/exception": "self.version",
+            "illuminate/filesystem": "self.version",
+            "illuminate/hashing": "self.version",
+            "illuminate/http": "self.version",
+            "illuminate/log": "self.version",
+            "illuminate/mail": "self.version",
+            "illuminate/pagination": "self.version",
+            "illuminate/pipeline": "self.version",
+            "illuminate/queue": "self.version",
+            "illuminate/redis": "self.version",
+            "illuminate/routing": "self.version",
+            "illuminate/session": "self.version",
+            "illuminate/support": "self.version",
+            "illuminate/translation": "self.version",
+            "illuminate/validation": "self.version",
+            "illuminate/view": "self.version"
+        },
+        "require-dev": {
+            "aws/aws-sdk-php": "~3.0",
+            "iron-io/iron_mq": "~2.0",
+            "mockery/mockery": "~0.9.4",
+            "pda/pheanstalk": "~3.0",
+            "phpunit/phpunit": "~4.0",
+            "predis/predis": "~1.0"
+        },
+        "suggest": {
+            "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (~3.0).",
+            "doctrine/dbal": "Required to rename columns and drop SQLite columns (~2.4).",
+            "fzaninotto/faker": "Required to use the eloquent factory builder (~1.4).",
+            "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (~5.3|~6.0).",
+            "iron-io/iron_mq": "Required to use the iron queue driver (~2.0).",
+            "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
+            "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0).",
+            "pda/pheanstalk": "Required to use the beanstalk queue driver (~3.0).",
+            "predis/predis": "Required to use the redis cache and queue drivers (~1.0).",
+            "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0).",
+            "symfony/psr-http-message-bridge": "Required to psr7 bridging features (0.2.*)."
+        },
+        "time": "2016-08-23 13:02:52",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/Illuminate/Queue/IlluminateQueueClosure.php"
+            ],
+            "files": [
+                "src/Illuminate/Foundation/helpers.php",
+                "src/Illuminate/Support/helpers.php"
+            ],
+            "psr-4": {
+                "Illuminate\\": "src/Illuminate/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "The Laravel Framework.",
+        "homepage": "http://laravel.com",
+        "keywords": [
+            "framework",
+            "laravel"
+        ]
     },
     {
         "name": "illuminate/html",
@@ -3511,57 +3564,5 @@
             }
         ],
         "abandoned": "laravelcollective/html"
-    },
-    {
-        "name": "mitulgolakiya/laravel-api-generator",
-        "version": "v1.3.3",
-        "version_normalized": "1.3.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/mitulgolakiya/laravel-api-generator.git",
-            "reference": "7b6fc43e17efca88dfd3e73c256277985d420db9"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/mitulgolakiya/laravel-api-generator/zipball/7b6fc43e17efca88dfd3e73c256277985d420db9",
-            "reference": "7b6fc43e17efca88dfd3e73c256277985d420db9",
-            "shasum": ""
-        },
-        "require": {
-            "illuminate/html": "~5.0",
-            "laracasts/flash": "~1.3",
-            "php": ">=5.4.0"
-        },
-        "time": "2015-05-23 19:08:51",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "src/Mitul/Generator/Constants/Constants.php"
-            ],
-            "psr-4": {
-                "Mitul\\": "src/Mitul/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Mitul Golakiya",
-                "email": "me@mitul.me"
-            }
-        ],
-        "description": "Laravel API/Scaffold/CRUD Generator from just one command with including Controller, Repository, Model, Migrations, routes.php update.",
-        "keywords": [
-            "api",
-            "crud",
-            "generator",
-            "laravel",
-            "migration",
-            "model",
-            "scaffold"
-        ]
     }
 ]

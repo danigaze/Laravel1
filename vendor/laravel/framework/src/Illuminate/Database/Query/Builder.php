@@ -1668,7 +1668,7 @@ class Builder
      */
     public function min($column)
     {
-        return $this->aggregate(__FUNCTION__, [$column]);
+        return $this->numericAggregate(__FUNCTION__, [$column]);
     }
 
     /**
@@ -1679,7 +1679,7 @@ class Builder
      */
     public function max($column)
     {
-        return $this->aggregate(__FUNCTION__, [$column]);
+        return $this->numericAggregate(__FUNCTION__, [$column]);
     }
 
     /**
@@ -1690,9 +1690,7 @@ class Builder
      */
     public function sum($column)
     {
-        $result = $this->aggregate(__FUNCTION__, [$column]);
-
-        return $result ?: 0;
+        return $this->numericAggregate(__FUNCTION__, [$column]);
     }
 
     /**
@@ -1703,7 +1701,7 @@ class Builder
      */
     public function avg($column)
     {
-        return $this->aggregate(__FUNCTION__, [$column]);
+        return $this->numericAggregate(__FUNCTION__, [$column]);
     }
 
     /**
@@ -1722,7 +1720,7 @@ class Builder
      *
      * @param  string  $function
      * @param  array   $columns
-     * @return float|int
+     * @return mixed
      */
     public function aggregate($function, $columns = ['*'])
     {
@@ -1749,10 +1747,34 @@ class Builder
         $this->bindings['select'] = $previousSelectBindings;
 
         if (isset($results[0])) {
-            $result = array_change_key_case((array) $results[0]);
-
-            return $result['aggregate'];
+            return array_change_key_case((array) $results[0])['aggregate'];
         }
+    }
+
+    /**
+     * Execute a numeric aggregate function on the database.
+     *
+     * @param  string  $function
+     * @param  array   $columns
+     * @return float|int
+     */
+    public function numericAggregate($function, $columns = ['*'])
+    {
+        $result = $this->aggregate($function, $columns);
+
+        if (! $result) {
+            return 0;
+        }
+
+        if (is_int($result) || is_float($result)) {
+            return $result;
+        }
+
+        if (strpos((string) $result, '.') === false) {
+            return (int) $result;
+        }
+
+        return (float) $result;
     }
 
     /**

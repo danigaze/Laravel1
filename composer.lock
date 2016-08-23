@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ebc99e5f4e8f991b78340a9f442bd01",
-    "content-hash": "30ad249c7ea03b2e07e66284c34c431e",
+    "hash": "e9e773a04e0f9993c3ab5d4b051a1aea",
+    "content-hash": "5726f54549b7b510da92df1bc13dc6ab",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -410,60 +410,17 @@
             "time": "2015-12-05 17:17:57"
         },
         {
-            "name": "laracasts/flash",
-            "version": "1.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laracasts/flash.git",
-                "reference": "e0a048b911092e15920ce66f4b6a54b6befa30a3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laracasts/flash/zipball/e0a048b911092e15920ce66f4b6a54b6befa30a3",
-                "reference": "e0a048b911092e15920ce66f4b6a54b6befa30a3",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Laracasts\\Flash": "src/"
-                },
-                "files": [
-                    "src/Laracasts/Flash/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jeffrey Way",
-                    "email": "jeffrey@laracasts.com"
-                }
-            ],
-            "description": "Easy flash notifications",
-            "time": "2015-12-22 15:52:08"
-        },
-        {
             "name": "laravel/framework",
-            "version": "v5.1.41",
+            "version": "v5.1.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4f338f494ee2fffe6605f70a7cb8a36c93da95b6"
+                "reference": "876189b5ce03d40f0d9380c06fb61a3d0743b19c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4f338f494ee2fffe6605f70a7cb8a36c93da95b6",
-                "reference": "4f338f494ee2fffe6605f70a7cb8a36c93da95b6",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/876189b5ce03d40f0d9380c06fb61a3d0743b19c",
+                "reference": "876189b5ce03d40f0d9380c06fb61a3d0743b19c",
                 "shasum": ""
             },
             "require": {
@@ -579,7 +536,57 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-08-10 12:23:27"
+            "time": "2016-08-23 13:02:52"
+        },
+        {
+            "name": "laravelcollective/html",
+            "version": "v5.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "f62269629b2a1093039733517bd7e75b3f98dffb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/f62269629b2a1093039733517bd7e75b3f98dffb",
+                "reference": "f62269629b2a1093039733517bd7e75b3f98dffb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.1.*",
+                "illuminate/routing": "5.1.*",
+                "illuminate/session": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "time": "2015-11-28 08:27:09"
         },
         {
             "name": "league/flysystem",
@@ -663,56 +670,6 @@
                 "storage"
             ],
             "time": "2016-08-10 08:55:11"
-        },
-        {
-            "name": "mitulgolakiya/laravel-api-generator",
-            "version": "v1.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mitulgolakiya/laravel-api-generator.git",
-                "reference": "7b6fc43e17efca88dfd3e73c256277985d420db9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mitulgolakiya/laravel-api-generator/zipball/7b6fc43e17efca88dfd3e73c256277985d420db9",
-                "reference": "7b6fc43e17efca88dfd3e73c256277985d420db9",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/html": "~5.0",
-                "laracasts/flash": "~1.3",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Mitul/Generator/Constants/Constants.php"
-                ],
-                "psr-4": {
-                    "Mitul\\": "src/Mitul/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mitul Golakiya",
-                    "email": "me@mitul.me"
-                }
-            ],
-            "description": "Laravel API/Scaffold/CRUD Generator from just one command with including Controller, Repository, Model, Migrations, routes.php update.",
-            "keywords": [
-                "api",
-                "crud",
-                "generator",
-                "laravel",
-                "migration",
-                "model",
-                "scaffold"
-            ],
-            "time": "2015-05-23 19:08:51"
         },
         {
             "name": "monolog/monolog",
@@ -1091,6 +1048,50 @@
                 "shell"
             ],
             "time": "2016-03-09 05:03:14"
+        },
+        {
+            "name": "styde/blade-pagination",
+            "version": "5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StydeNet/blade-pagination.git",
+                "reference": "727b3c0f5028a610b90231162e4a1beed80b8807"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StydeNet/blade-pagination/zipball/727b3c0f5028a610b90231162e4a1beed80b8807",
+                "reference": "727b3c0f5028a610b90231162e4a1beed80b8807",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Styde\\BladePagination\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Duilio Palacios",
+                    "email": "admin@styde.net",
+                    "homepage": "http://styde.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel's pagination with Blade templating support",
+            "homepage": "http://github.com/StydeNet/blade-pagination",
+            "keywords": [
+                "blade",
+                "pagination"
+            ],
+            "time": "2015-08-02 02:23:34"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3453,7 +3454,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "styde/blade-pagination": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -61,5 +61,32 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+        
+        $user->rol = 'user';
+        $user->save();
+
+        return $user;
     }
+    /**
+     * Get the path to the login route.
+     *
+     * @return string
+     */
+    public function loginPath()
+    {
+        return route('login');
+    }
+
+    /**
+     * Get the post register / login redirect path.
+     *
+     * @return string
+     */
+    public function redirectPath()
+    {
+
+        return route('dashboard');
+    }
+
+    
 }
